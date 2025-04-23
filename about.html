@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">My Portfolio</a>
+      
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html" style="color: white;">About</a>
+          <a class="contact" href="contact.html">Contact</a>
+            
+        </nav>
+      </header>
+<div class="about">
+  
+      <p class="about1">Im a full-stack developer, meaning I can do both the back-end and the front-end of a website. I use HTML and CSS at a intermediate level, while still learning other languages like Java Script, Python and Java. <br> <br>I've learned how to program by myself with the help of the internet, mainly YouTube tutorials and <a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> </p>
+
+      <p class="about2">Here are some of the languages that I use:</p>
+    <div class="programsContainer">
+      <div class="programs">
+        <img src="HTML5_logo_and_wordmark.svg.png">
+        <p>HTML<br> skill level: advanced</p>
+      </div>
+
+      <div class="programs">
+        <img src="CSS3_logo_and_wordmark.svg.png">
+        <p>CSS<br> skill level: advanced</p>
+      </div>
+
+      <div class="programs">
+        <img src="JavaScript.png">
+        <p>JavaScript<br> skill level: beginner</p>
+      </div>
+      
+    </div>
+
+    <div class="about">
+      <p class="about1">I also work in other mediums like graphic design, 2D motion graphics/animations and 3D modeling. You can check my <a class="YTlink" href="https://www.youtube.com/@Philip4" target="_blank">YouTube</a> channel where I ocassionaly post animations and gaming</p>
+
+      <p class="about2">Here are some of the programs that I use:</p>
+    <div class="programsContainer">
+      <div class="programs">
+        <img src="photoshop.png">
+        <p>photoshop <br> skill level: advanced</p>
+      </div>
+
+      <div class="programs">
+        <img src="aftereffects.png">
+        <p>after effects <br> skill level: advanced</p>
+      </div>
+
+      <div class="programs">
+        <img src="animate.png">
+        <p>Animate <br> skill level: intermediate</p>
+      </div>
+
+      <div class="programs">
+        <img src="blender.png">
+        <p>Blender<br> skill level: beginner</p>
+      </div>
+
+
+      
+    </div>
+
+    
+
+
+  
+      
+      <p class="about3">These are my GCSE qualifications</p>
+
+      <table>
+        <tr>
+          <th>subject</th>
+          <th>grade</th>
+        </tr>
+        <tr>
+          <td>english</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>math</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>art</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>science</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>music</td>
+          <td>distinction</td>
+        </tr>
+        <tr>
+          <td>ethics</td>
+          <td>5</td>
+        </tr>
+      </table>
+    </div>
+</body>
+
+<style>
+
+.about{
+  margin-top: 100px;
+  margin: 100px;
+}
+.about1{
+  font-size: 2rem;
+  font-family:'Courier New', Courier, monospace;
+  font-weight:lighter;
+  /* text-align: center; */
+  letter-spacing: -2px;
+  max-width: 1000px;
+  margin: auto;
+}
+.about1 a{
+  /* text-decoration: underline; */
+  color: rgb(0, 149, 255);
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: bold;
+  border-style: solid;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.about1 .YTlink{
+  color: rgb(255, 22, 22);
+}
+.about2{
+  font-weight: lighter;
+  font-size: 2rem;
+  /* margin-left: 30px; */
+  text-align: center;
+  
+}
+.about3{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.programsContainer{
+  display: flex;
+  flex-direction: row;
+  /* background-color: aliceblue; */
+  justify-content: center;
+  
+  
+}
+
+.programs{
+  display:grid;
+  /* background-color: aliceblue; */
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: 0px 20px;
+}
+div.programs p{
+padding: 0px;
+background-color: rgba(0, 0, 0, 0.412);
+padding: 10px 15px;
+border-radius: 10px;
+}
+.adobe p{
+  text-align: center;
+  margin: 10px 0px
+}
+
+/*  
+table, td, th{
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 10px;
+} */
+
+table {
+    margin: auto;
+    border-collapse:separate;
+    border:solid rgb(255, 255, 255) 1px;
+    border-radius:6px;
+    /* margin-left: 50px; */
+}
+table, td, th{
+  padding: 10px;
+  font-size: 2rem;
+}
+
+td, th {
+    border-left:solid rgb(255, 255, 255) 1px;
+    border-top:solid rgb(255, 255, 255) 1px;
+}
+
+th {
+    background-color: rgba(0, 0, 255, 0);
+    border-top: none;
+}
+
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+.adobe{
+  width: 300px;
+}
+img{
+  /* border-radius: 2em; */
+  width: 7em;
+}
+
+
+
+
+</style>
+</html>

@@ -1,36 +1,169 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-<link rel="stylesheet" href="style.css">
-<title>SkyGarden</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-  <div class="nav">
-    <div>
-      <h1><a href="index.html">SkyGarden</a></h1>
-    </div>
-
-    <ul>
-      <li><a href="find_us.html">Find us</a></li>
-      <li><a href="about_us.html">About us</a></li>
-      <li><a href="contact.html">Contact us</a></li>
-      <li><a href="#">More</a></li>
-    </ul>
-  </div>
-  <p>Contact number/whatsapp: 0235346346</p>
-  <a class=email href="https://mail.google.com/mail/u/0/?hl=en-GB#inbox?compose=CllgCHrdkfVCCqqrvsmkpzjBxcVmgnKCDKSCCFSHBRWchrJNwNFDmgZNcwZrKlKWcMBbTWpNTNB">Email Us</a>
-  <p></p>
-<div class="munte"></div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  <path fill="#0F0F0F " fill-opacity="0.5" d="M0,128L288,32L576,288L864,128L1152,160L1440,288L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path>
-</svg>
+    <header class="header">
+        <a href="index.html" class="logo">My Portfolio</a>
+      
+        <nav class="navbar">
+         <a  href="index.html">Home</a> 
+          <a href="gallery.html">Gallery</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a class="contact" style="color: white; " href="contact.html">Contact</a>
+            
+        </nav>
+      </header>
+      <p class="sendEmail">Send me an email</p>
+      <div class="form">
+  
+        <form action="" class="contact-left"
+        <div class="contact-left-title">
+            <input class="input" type="text" placeholder="Name.." autocomplete="off" required>
+            <input class="input" type="text" placeholder="Email.." autocomplete="off" required>
+            <textarea placeholder="message"></textarea>
+            <button class="send">Send</button>
+        </div>
+        
+      </div>
+        
 </body>
 
+
+<style>
+/* *{
+  box-sizing: border-box;
+  padding: 0px;
+    margin: 0px;
+} */
+/* body{
+    margin: 0;
+    font-family:poppins;
+    background: url(copaci.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    
+} */
+
+
+
+body{
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url(copaci.png);
+}
+  .sendEmail{
+    text-align: center;
+    margin-top: 170px;
+    font-size: 2rem;
+  }
+  .form {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 30vh; 
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.418);
+    padding: 20px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.267);
+    border-width: 1px;
+}
+
+
+  .input{
+    background-color: rgba(240, 248, 255, 0);
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: white;
+    border-width: 1px;
+    margin: 10px;
+  }
+
+  .input::placeholder{
+    color: white;
+  }
+
+  textarea {
+    width: 100%; /* Adjust width relative to the container */
+    height: 316px; /* Set the height explicitly */
+    background-color: rgba(255, 255, 255, 0.164);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    padding: 10px;
+    color: white; /* Text color */
+    font-size: 1.5rem;
+    
+}
+textarea::placeholder{
+  color: rgba(255, 255, 255, 0.349);
+  letter-spacing: 4px;
+}
+
+.send{
+  background-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  padding: 10px;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+  margin: auto;
+ 
+}
+
+button.send{
+  margin-left: 90px;
+}
+
+
+ /* .header{
+    position: relative;
+   
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.322);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.493);
+    backdrop-filter: blur(50px);
+ } */
+
+ /* a{
+    padding: 15px 40px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.468);
+   font-size: 2rem;
+   transition: 0.5s;
+   border-style: solid;
+   border-color: rgba(0, 0, 0, 0);
+   border-radius: 100px;
+ } */
+ a:hover{
+    color:white
+ }
+ </style>
 </html>
+ 
